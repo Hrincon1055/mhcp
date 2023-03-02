@@ -3,6 +3,12 @@
     <app-header [hidden]="!showHeader"></app-header>
     <app-menu [hidden]="!showMenu"></app-menu>
     <div class="layout-main">
+      <div class="flex flex-row justify-content-end p-0">
+        <span class="text-600 font-semibold">
+          MINISTERIO DE HACIENDA Y CRÉDITO PÚBLICO - GESTIÓN GENERAL
+          <small style="color: var(--primary-color)">(13-01-01)</small>
+        </span>
+      </div>
       <router-outlet></router-outlet>
     </div>
     <app-footer [hidden]="!showFooter"></app-footer>
