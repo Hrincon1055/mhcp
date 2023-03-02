@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { environment } from 'src/environments/environment';
 import { LayoutService } from '../../core/services/ui/app.layout.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-admin-layout',
@@ -8,16 +8,13 @@ import { LayoutService } from '../../core/services/ui/app.layout.service';
   styleUrls: ['./admin-layout.component.scss'],
 })
 export class AdminLayoutComponent implements OnInit {
-
   public showHeader: boolean = environment.showHeader;
   public showMenu: boolean = environment.showMenu;
   public showFooter: boolean = environment.showFooter;
-  
-  constructor(public layoutService: LayoutService) {
-  }
 
-  ngOnInit(): void {
-  }
+  constructor(public layoutService: LayoutService) {}
+
+  ngOnInit(): void {}
 
   public get containerClass(): any {
     return {
