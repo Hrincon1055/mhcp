@@ -1,9 +1,13 @@
 <div class="layout-topbar">
   <a class="layout-topbar-logo">
     <img src="../../../../assets/layout/images/logo.png" alt="logo" />
-    <small>Modulo</small>
+    <div class="flex flex-column">
+      <span class="text-base">Modulo</span>
+      <small class="text-xs" style="color: var(--primary-color)">version</small>
+    </div>
   </a>
   <button
+    type="button"
     #menubutton
     class="p-link layout-menu-button layout-topbar-button"
     (click)="layoutService.onMenuToggle()"
@@ -11,6 +15,7 @@
     <i class="pi pi-bars"></i>
   </button>
   <button
+    type="button"
     #topbarmenubutton
     class="p-link layout-topbar-menu-button layout-topbar-button"
     (click)="layoutService.showProfileSidebar()"
