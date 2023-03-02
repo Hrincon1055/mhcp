@@ -53,10 +53,16 @@ import { ColorPickerModule } from 'primeng/colorpicker';
 import { SplitButtonModule } from 'primeng/splitbutton';
 import { SliderModule } from 'primeng/slider';
 import { DialogModule } from 'primeng/dialog';
+import { AvatarModule } from 'primeng/avatar';
+import { AvatarGroupModule } from 'primeng/avatargroup';
 
+import { BadgeModule } from 'primeng/badge';
 @NgModule({
   imports: [
     CommonModule,
+    AvatarModule,
+    BadgeModule,
+    AvatarGroupModule,
     SidebarModule,
     RadioButtonModule,
     ButtonModule,
@@ -112,6 +118,10 @@ import { DialogModule } from 'primeng/dialog';
   ],
 
   exports: [
+    CommonModule,
+    AvatarModule,
+    BadgeModule,
+    AvatarGroupModule,
     SidebarModule,
     RadioButtonModule,
     ButtonModule,

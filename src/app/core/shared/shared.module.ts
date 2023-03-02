@@ -1,8 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
@@ -17,11 +14,7 @@ import { AppMenuitemComponent } from './menu/app.menuitem.component';
     MenuComponent,
     AppMenuitemComponent,
   ],
-  imports: [
-    CommonModule,
-    PrimengModule,
-    HttpClientModule
-  ],
+  imports: [CommonModule, PrimengModule, HttpClientModule],
   exports: [FooterComponent, HeaderComponent, MenuComponent],
 })
 export class SharedModule {}
