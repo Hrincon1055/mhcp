@@ -1,0 +1,68 @@
+<div
+  class="surface-ground flex flex-row align-items-center justify-content-center md:justify-content-center lg:justify-content-end min-h-screen md:px-8 min-w-screen overflow-hidden"
+>
+  <div
+    class="flex flex-column align-items-center justify-content-center md:mr-8"
+  >
+    <div class="w-full surface-card py-8 px-5 sm:px-8">
+      <div class="text-center mb-2">
+        <img
+          src="../../../assets/layout/images/logo.png"
+          alt="Logo"
+          height="80"
+          class="mb-3"
+        />
+        <div
+          class="text-lg text-left font-semibold"
+          style="color: var(--primary-color)"
+        >
+          Inicio de Sesión
+        </div>
+      </div>
+      <div>
+        <label for="usuario" class="block text-900 text-lg font-medium mb-2"
+          >Usuario <small class="text-red-500">*</small>
+        </label>
+        <form autocomplete="off">
+          <input
+            id="usuario"
+            type="text"
+            placeholder="Escriba su usuario"
+            pInputText
+            class="w-full md:w-30rem mb-5"
+            style="padding: 1rem"
+          />
+          <label
+            for="contrasena"
+            class="block text-900 font-medium text-lg mb-2"
+            >Contraseña <small class="text-red-500">*</small></label
+          >
+          <p-password
+            id="contrasena"
+            placeholder="Escriba su contraseña"
+            [toggleMask]="true"
+            styleClass="mb-5 w-full"
+            [feedback]="false"
+            inputStyleClass="w-full p-3 "
+          ></p-password>
+          <div
+            class="flex flex-row align-items-center justify-content-between mb-5 gap-5"
+          >
+            <a
+              class="font-medium no-underline ml-2 text-right cursor-pointer"
+              style="color: var(--primary-color)"
+              >¿Ha olvidado la contraseña?</a
+            >
+            <button
+              pButton
+              pRipple
+              icon="pi pi-sign-in"
+              label="Ingresar"
+              class="px-3 text-xl"
+            ></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

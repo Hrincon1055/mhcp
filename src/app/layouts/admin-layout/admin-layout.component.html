@@ -1,0 +1,10 @@
+<div class="layout-wrapper" [ngClass]="containerClass">
+  <div class="layout-main-container">
+    <app-header [hidden]="!showHeader"></app-header>
+    <app-menu [hidden]="!showMenu"></app-menu>
+    <div class="layout-main">
+      <router-outlet></router-outlet>
+    </div>
+    <app-footer [hidden]="!showFooter"></app-footer>
+  </div>
+</div>
