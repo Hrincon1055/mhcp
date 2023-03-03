@@ -55,11 +55,14 @@ import { SliderModule } from 'primeng/slider';
 import { DialogModule } from 'primeng/dialog';
 import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
-
+import { MessagesModule } from 'primeng/messages';
+import { MessageModule } from 'primeng/message';
 import { BadgeModule } from 'primeng/badge';
 @NgModule({
   imports: [
     CommonModule,
+    MessagesModule,
+    MessageModule,
     AvatarModule,
     BadgeModule,
     AvatarGroupModule,
@@ -119,6 +122,8 @@ import { BadgeModule } from 'primeng/badge';
 
   exports: [
     CommonModule,
+    MessagesModule,
+    MessageModule,
     AvatarModule,
     BadgeModule,
     AvatarGroupModule,
