@@ -58,6 +58,7 @@ import { AvatarGroupModule } from 'primeng/avatargroup';
 import { MessagesModule } from 'primeng/messages';
 import { MessageModule } from 'primeng/message';
 import { BadgeModule } from 'primeng/badge';
+import { ToolbarModule } from 'primeng/toolbar';
 @NgModule({
   imports: [
     CommonModule,
@@ -118,6 +119,7 @@ import { BadgeModule } from 'primeng/badge';
     SplitButtonModule,
     SliderModule,
     DialogModule,
+    ToolbarModule,
   ],
 
   exports: [
@@ -179,6 +181,7 @@ import { BadgeModule } from 'primeng/badge';
     SplitButtonModule,
     SliderModule,
     DialogModule,
+    ToolbarModule,
   ],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
 })

@@ -10,7 +10,6 @@ import { Page404Component } from './core/page404/page404.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './core/shared/shared.module';
 import { LayoutsModule } from './layouts/layouts.module';
-import { DemoComponent } from './modules/module1/components/demo/demo.component';
 import { HttpAuthorizationService } from './core/interceptor/http-authorization.service';
 
 export const httpInterceptors = [
@@ -23,7 +22,7 @@ export const httpInterceptors = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, Page404Component, DemoComponent],
+  declarations: [AppComponent, Page404Component],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

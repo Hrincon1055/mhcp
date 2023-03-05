@@ -1,13 +1,21 @@
-<div class="layout-topbar">
+<div
+  class="layout-topbar border-bottom-1"
+  [ngClass]="
+    layoutService.config.colorScheme == 'light'
+      ? 'border-gray-400'
+      : 'border-gray-600'
+  "
+>
   <a class="layout-topbar-logo">
     <img src="../../../../assets/layout/images/logo.png" alt="logo" />
     <div class="flex flex-column">
-      <span class="text-base">SEG</span>
+      <span class="text-base">{{ titulo }}</span>
       <small class="text-xs" style="color: var(--primary-color)"
-        >Versión 12.1.0</small
+        >Versión {{ version }}</small
       >
     </div>
   </a>
+
   <button
     type="button"
     #menubutton

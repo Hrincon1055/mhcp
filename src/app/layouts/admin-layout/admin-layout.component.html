@@ -3,10 +3,19 @@
     <app-header [hidden]="!showHeader"></app-header>
     <app-menu [hidden]="!showMenu"></app-menu>
     <div class="layout-main">
-      <div class="flex flex-row justify-content-end">
-        <span class="text-600 font-semibold">
+      <div
+        class="surface-section flex flex-row align-content-center align-items-center h-4rem py-2 px-5 border-bottom-1"
+        [ngClass]="
+          layoutService.config.colorScheme == 'light'
+            ? 'border-gray-400'
+            : 'border-gray-600'
+        "
+        style="font-size: 1rem; color: var(--primary-color)"
+      >
+        <i class="pi pi-exclamation-circle mr-2"></i>
+        <span class="font-semibold">
           MINISTERIO DE HACIENDA Y CRÉDITO PÚBLICO - GESTIÓN GENERAL
-          <small style="color: var(--primary-color)">(13-01-01)</small>
+          <small>(13-01-01)</small>
         </span>
       </div>
       <router-outlet></router-outlet>
