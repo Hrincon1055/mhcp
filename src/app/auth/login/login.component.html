@@ -20,26 +20,30 @@
         </div>
       </div>
       <div>
-        <label for="usuario" class="block text-900 text-lg font-medium mb-2"
+        <label for="identifier" class="block text-900 text-lg font-medium mb-2"
           >Usuario <small class="text-red-500">*</small>
         </label>
-        <form autocomplete="off">
+        <form
+          [formGroup]="formLogin"
+          (ngSubmit)="loginUser()"
+          autocomplete="off"
+        >
           <input
-            id="usuario"
+            id="identifier"
+            formControlName="identifier"
             type="text"
             placeholder="Escriba su usuario"
             pInputText
             class="w-full md:w-30rem mb-5"
             style="padding: 1rem"
           />
-          <label
-            for="contrasena"
-            class="block text-900 font-medium text-lg mb-2"
+          <label for="password" class="block text-900 font-medium text-lg mb-2"
             >Contraseña <small class="text-red-500">*</small></label
           >
           <p-password
-            id="contrasena"
+            id="password"
             placeholder="Escriba su contraseña"
+            formControlName="password"
             [toggleMask]="true"
             styleClass="mb-5 w-full"
             [feedback]="false"
@@ -54,11 +58,14 @@
               >¿Ha olvidado la contraseña?</a
             >
             <button
+              type="submit"
               pButton
               pRipple
               icon="pi pi-sign-in"
               label="Ingresar"
               class="px-3 text-xl"
+              [disabled]="!formLogin.valid"
+              [loading]="isLoading"
             ></button>
           </div>
         </form>

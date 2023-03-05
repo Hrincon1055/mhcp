@@ -59,6 +59,7 @@ import { MessagesModule } from 'primeng/messages';
 import { MessageModule } from 'primeng/message';
 import { BadgeModule } from 'primeng/badge';
 import { ToolbarModule } from 'primeng/toolbar';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
 @NgModule({
   imports: [
     CommonModule,
@@ -120,6 +121,7 @@ import { ToolbarModule } from 'primeng/toolbar';
     SliderModule,
     DialogModule,
     ToolbarModule,
+    ProgressSpinnerModule,
   ],
 
   exports: [
@@ -182,6 +184,7 @@ import { ToolbarModule } from 'primeng/toolbar';
     SliderModule,
     DialogModule,
     ToolbarModule,
+    ProgressSpinnerModule,
   ],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
 })
