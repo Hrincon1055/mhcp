@@ -28,8 +28,8 @@ export class LayoutService {
     inputStyle: 'outlined',
     menuMode: 'static',
     colorScheme: 'light',
-    theme: 'lara-light-indigo',
-    scale: 14,
+    theme: 'bootstrap4-light-blue',
+    scale: 14, //12, 13, 14, 15, 16
   };
   public state: LayoutState = {
     staticMenuDesktopInactive: true,
