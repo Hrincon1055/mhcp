@@ -4,11 +4,11 @@
     <app-menu [hidden]="!showMenu"></app-menu>
     <div class="layout-main">
       <div
-        class="surface-section flex flex-row align-content-center align-items-center h-3rem py-2 px-5 border-bottom-1"
+        class="surface-card flex flex-row align-content-center align-items-center h-3rem py-2 px-5 border-bottom-1"
         [ngClass]="
-          layoutService.config.colorScheme == 'light'
-            ? 'border-gray-400'
-            : 'border-gray-600'
+          layoutService.config.colorScheme === 'light'
+            ? 'border-gray-300'
+            : 'border-bluegray-600'
         "
         style="font-size: 1rem; color: var(--primary-color)"
       >
